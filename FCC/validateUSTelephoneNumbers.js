@@ -1,0 +1,7 @@
+function telephoneCheck(str) {
+
+    var regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?(\d{3})[\s\-]?(\d{4})$/g
+
+    return regex.test(str);
+}
+console.log(telephoneCheck("1 (805) 555-5555"))

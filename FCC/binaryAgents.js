@@ -1,0 +1,13 @@
+
+function binaryAgent(str) {
+	//split the string into indivual binary values, and map over those values --
+	return str.split(" ").map(function(value){
+		//return the string and convert the binary value, using 'parseInt', into ASCII numbers --
+		//convert the ASCII numbers, using 'String.fromCharCode', into its corresponding letter --
+		return String.fromCharCode(parseInt(value, 2));
+		//join the words into a complete sentence string -- 
+	}).join("");
+  
+}
+
+console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"))
